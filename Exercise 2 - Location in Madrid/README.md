@@ -10,7 +10,20 @@ Regarding the above, the main goal of this exercise is to provide the best locat
 
 ## Data description
 
+### Sources
+
 To address and achieve the main objective of this exercise it was used the following data sources:
 
 - **Open data portal of the _Ayuntamiento de Madrid_**. Here, was found information regarding average income, average age, and unemployment rate, among others, per neighborhood. The information is available in CSV format. 
 - **Foursquare API.** Here, was found the most common venues of given a Borough or neighborhood of Madrid.  
+
+### Data wrangling
+
+In this phase, the data downloaded from the "Ayuntamiento de Madrid" were in three files with CSV formats. Some transformations were needed due to the type of variable that Python read. The relevant features came as objects, and we needed them as integers or floats. Also, the irrelevant features were dropped. Later, the three files were merged into a single one to ease the analysis and modeling. Finally, through the FourSquare API, we retrieved the data related to the latitude and longitude of each neighborhood of Madrid. 
+
+## Methodology
+
+Once the data was clean and ready to use, some summary statistics and visualization were conducted to get a better understanding of it. For instance:
+
+Summary statistics![Summary statistics](C:\Users\leang\OneDrive\Cursos_Online\Data Science\IBM certification\Final project\estadísticas.png) 
+

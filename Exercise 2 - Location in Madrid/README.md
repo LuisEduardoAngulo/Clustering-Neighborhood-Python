@@ -19,7 +19,7 @@ To address and achieve the main objective of this exercise it was used the follo
 
 ### Data wrangling
 
-In this phase, the data downloaded from the "Ayuntamiento de Madrid" were in three files with CSV formats. Some transformations were needed due to the type of variable that Python read. The relevant features came as objects, and we needed them as integers or floats. Also, the irrelevant features were dropped. Later, the three files were merged into a single one to ease the analysis and modeling. Finally, through the FourSquare API, we retrieved the data related to the latitude and longitude of each neighborhood of Madrid. 
+In this phase, the data downloaded from the "Ayuntamiento de Madrid" were in three files with CSV formats. Some transformations were needed due to the type of variable that Python read. The relevant features came as objects, and I needed them as integers or floats. Also, the irrelevant features were dropped. Later, the three files were merged into a single one to ease the analysis and modeling. Finally, through the FourSquare API, I retrieved the data related to the latitude and longitude of each neighborhood of Madrid. 
 
 ## Methodology
 
@@ -28,4 +28,19 @@ Once the data was clean and ready to use, some summary statistics and visualizat
 Summary statistics
 
 ![Summary statistics](https://github.com/LuisEduardoAngulo/Coursera_Capstone/blob/main/Exercise%202%20-%20Location%20in%20Madrid/estad%C3%ADsticas.png) 
+
+Features distributions
+
+![Summary statistics](https://github.com/LuisEduardoAngulo/Coursera_Capstone/blob/main/Exercise%202%20-%20Location%20in%20Madrid/estad%C3%ADsticas.png) 
+
+Later, I used the FOLIUM library to create a map of Madrid with neighborhoods superimposed on top of it. Before this, the latitude and longitude of Madrid were retrieved through the geocoder function. All this process was done following the example of the hands-on material.
+
+Madrid Map
+
+![Summary statistics](https://github.com/LuisEduardoAngulo/Coursera_Capstone/blob/main/Exercise%202%20-%20Location%20in%20Madrid/estad%C3%ADsticas.png) 
+
+The exercise continued with the analysis and exploration of each neighborhood. Using the FourSquare API venues placed on each one of the before-mentioned were recovered. The limit of places to be reached was set to 100, and the radius to 500. A total of 3680 venues and 264 uniques venues´ categories were identified.
+
+Considering that the main interest of this exercise was to identify potential spots to place a gym, I performed a feature engineering step and grouped some columns (venues) related to gyms to avoid duplicity or sparse information. Subsequently, the analysis continued like the hands-on exercise, namely: grouping the retrieved venues by neighborhood and taking the mean of the frequency of occurrence of each category. And then it was observed each neighborhood along with the top 5 most common venues. Finally, a new data set was created, as a previous step to the clustering, where the 10 most common places for each neighborhood were exhibited.
+
 

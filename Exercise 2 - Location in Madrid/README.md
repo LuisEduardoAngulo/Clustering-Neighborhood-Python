@@ -43,4 +43,17 @@ The exercise continued with the analysis and exploration of each neighborhood. U
 
 Considering that the main interest of this exercise was to identify potential spots to place a gym, I performed a feature engineering step and grouped some columns (venues) related to gyms to avoid duplicity or sparse information. Subsequently, the analysis continued like the hands-on exercise, namely: grouping the retrieved venues by neighborhood and taking the mean of the frequency of occurrence of each category. And then it was observed each neighborhood along with the top 5 most common venues. Finally, a new data set was created, as a previous step to the clustering, where the 10 most common places for each neighborhood were exhibited.
 
+The mentioned table looked as follows:
+
+![Summary statistics](https://github.com/LuisEduardoAngulo/Coursera_Capstone/blob/main/Exercise%202%20-%20Location%20in%20Madrid/estad%C3%ADsticas.png) 
+
+## Results
+
+As mentioned before, my principal interest was to identify potential spots in Madrid to place a gym. So, I created a new data frame with the venues that were related to gyms or similars, I also included the information about average income, average age, and unemployment rate per neighborhood. The final dataset that was cluster was the following:
+
+![Summary statistics](https://github.com/LuisEduardoAngulo/Coursera_Capstone/blob/main/Exercise%202%20-%20Location%20in%20Madrid/estad%C3%ADsticas.png) 
+
+At first, the K-means algorithm was deployed with 5 clusters. Later I tried with 3, 4, and 7 clusters. But, 5 achieved more stables results. Meaning that the neighborhoods dispersed better among the clusters, avoiding agglomerations in only one of them. 
+
+The map of Madrid with the clustered neighborhoods looks as follows, where each color depicts one cluster.
 

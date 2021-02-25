@@ -59,3 +59,12 @@ The map of Madrid with the clustered neighborhoods looks as follows, where each 
 
 ![cluster](https://github.com/LuisEduardoAngulo/Coursera_Capstone/blob/main/Exercise%202%20-%20Location%20in%20Madrid/Images/cluster.png)
 
+## Discusion
+
+As can be seen in the below image, I recommend the neighborhoods in clusters 2 and 5 as potentials spots to establish a new gym (details in the Jupyter notebook). 
+
+In both, there is a market niche that is not being served. For example, cluster 2 does not have any gym aimed at the general public. It only has a university gym. Besides, the population that inhabits this neighborhood is high-income and with low unemployment rates, so they have the resources to pay for exclusive services. A similar situation is observed in cluster 5. Although there is a greater presence of gyms here, it is a high-income segment, where value-added services could be offered with the objective of attracting these potential clients.
+
+![cluster_results](https://github.com/LuisEduardoAngulo/Coursera_Capstone/blob/main/Exercise%202%20-%20Location%20in%20Madrid/Images/cluster.png)
+
+

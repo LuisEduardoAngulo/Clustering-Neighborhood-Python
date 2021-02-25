@@ -69,4 +69,6 @@ In both, there is a market niche that is not being served. For example, cluster 
 
 ## Conclusion
 
+As mentioned in the introduction to this report, the number of gyms and similar options available for the customers has been growing over the years. However, the results of this exercise showed that there is still a market niche to be exploited in the city of Madrid. Highlighting, the importance of making business decisions based on data.
+
 

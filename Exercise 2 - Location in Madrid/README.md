@@ -25,5 +25,6 @@ In this phase, the data downloaded from the "Ayuntamiento de Madrid" were in thr
 
 Once the data was clean and ready to use, some summary statistics and visualization were conducted to get a better understanding of it. For instance:
 
-Summary statistics![Summary statistics](C:\Users\leang\OneDrive\Cursos_Online\Data Science\IBM certification\Final project\estadísticas.png) 
+Summary statistics
+![Summary statistics](https://github.com/LuisEduardoAngulo/Coursera_Capstone/blob/main/Exercise%202%20-%20Location%20in%20Madrid/estad%C3%ADsticas.png) 
 

@@ -27,17 +27,17 @@ Once the data was clean and ready to use, some summary statistics and visualizat
 
 Summary statistics
 
-![Summary statistics](https://github.com/LuisEduardoAngulo/Coursera_Capstone/blob/main/Exercise%202%20-%20Location%20in%20Madrid/estad%C3%ADsticas.png) 
+![Summary statistics](https://github.com/LuisEduardoAngulo/Coursera_Capstone/blob/main/Exercise%202%20-%20Location%20in%20Madrid/Images/estad%C3%ADsticas.png) 
 
 Features distributions
 
-![Summary statistics](https://github.com/LuisEduardoAngulo/Coursera_Capstone/blob/main/Exercise%202%20-%20Location%20in%20Madrid/estad%C3%ADsticas.png) 
+![Features distributions](https://github.com/LuisEduardoAngulo/Coursera_Capstone/blob/main/Exercise%202%20-%20Location%20in%20Madrid/Images/distribuciones.png) 
 
 Later, I used the FOLIUM library to create a map of Madrid with neighborhoods superimposed on top of it. Before this, the latitude and longitude of Madrid were retrieved through the geocoder function. All this process was done following the example of the hands-on material.
 
 Madrid Map
 
-![Summary statistics](https://github.com/LuisEduardoAngulo/Coursera_Capstone/blob/main/Exercise%202%20-%20Location%20in%20Madrid/estad%C3%ADsticas.png) 
+![Madrid Map](https://github.com/LuisEduardoAngulo/Coursera_Capstone/blob/main/Exercise%202%20-%20Location%20in%20Madrid/Images/Madrid.png) 
 
 The exercise continued with the analysis and exploration of each neighborhood. Using the FourSquare API venues placed on each one of the before-mentioned were recovered. The limit of places to be reached was set to 100, and the radius to 500. A total of 3680 venues and 264 uniques venues´ categories were identified.
 
@@ -45,15 +45,17 @@ Considering that the main interest of this exercise was to identify potential sp
 
 The mentioned table looked as follows:
 
-![Summary statistics](https://github.com/LuisEduardoAngulo/Coursera_Capstone/blob/main/Exercise%202%20-%20Location%20in%20Madrid/estad%C3%ADsticas.png) 
+![table](https://github.com/LuisEduardoAngulo/Coursera_Capstone/blob/main/Exercise%202%20-%20Location%20in%20Madrid/Images/tabla.png) 
 
 ## Results
 
 As mentioned before, my principal interest was to identify potential spots in Madrid to place a gym. So, I created a new data frame with the venues that were related to gyms or similars, I also included the information about average income, average age, and unemployment rate per neighborhood. The final dataset that was cluster was the following:
 
-![Summary statistics](https://github.com/LuisEduardoAngulo/Coursera_Capstone/blob/main/Exercise%202%20-%20Location%20in%20Madrid/estad%C3%ADsticas.png) 
+![cluster table](https://github.com/LuisEduardoAngulo/Coursera_Capstone/blob/main/Exercise%202%20-%20Location%20in%20Madrid/Images/cluster_table.png) 
 
 At first, the K-means algorithm was deployed with 5 clusters. Later I tried with 3, 4, and 7 clusters. But, 5 achieved more stables results. Meaning that the neighborhoods dispersed better among the clusters, avoiding agglomerations in only one of them. 
 
 The map of Madrid with the clustered neighborhoods looks as follows, where each color depicts one cluster.
+
+![cluster](https://github.com/LuisEduardoAngulo/Coursera_Capstone/blob/main/Exercise%202%20-%20Location%20in%20Madrid/Images/cluster.png)
 
